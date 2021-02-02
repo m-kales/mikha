@@ -4,15 +4,44 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #f5e5c8;
+    font-family: 'Coda', cursive;
+    height: 100%;
+    width: 100%;
+}
+
+header { 
+    height: 90vh;
+}
+
 .navbar {
-    list-style: none;
+    padding-top: 2em;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     align-content: space-between;
-    margin-right: auto;
-    float: right;
+    justify-content: space-around;
 }
 
 .navbar li {
-    margin-right: 100px;
+    list-style: none;
+    float: right;
+    margin-right: 4em;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #2c2524;
+}
+
+.hero-container {
+    width: 100vw;
+    height: 90vh;
+    display: grid;
+}
+
+.center-box {
+    place-self: center;
+    width: 40vw;
+    height: 50vh;
 }
