@@ -5,14 +5,10 @@
 }
 
 body {
-    background-color: #f5e5c8;
+    background-color: #fffaf0;
     font-family: 'Coda', cursive;
     height: 100%;
     width: 100%;
-}
-
-header { 
-    height: 70vh;
 }
 
 .navbar {
@@ -23,21 +19,26 @@ header {
     justify-content: space-around;
 }
 
-.navbar li {
-    list-style: none;
-    float: right;
-    margin-right: 4em;
+.navbar h2 {
+    font-size: 1em;
 }
 
-.navbar a {
+.navbar li {
+    font-size: 1em;
+    list-style: none;
+    display: inline;
+    margin-left: 4em;
+}
+
+a {
     text-decoration: none;
     color: #2c2524;
 }
 
 .hero-container {
     width: 100vw;
-    height: 90vh;
     display: grid;
+    padding-top: 8em;
 }
 
 .center-box {
@@ -46,11 +47,13 @@ header {
     height: 50vh;
 }
 
+
 main {
     display: grid;
 }
 
-.projects {
+.project-thumbs {
+    background-color: #fffaf0;
     width: 60vw;
     justify-self: center;
     align-items: center;
@@ -60,9 +63,88 @@ main {
 }
 
 .panel {
+    position: relative;
     border: #2c2524 solid .2em;
     text-align: center;
-    height: 20vh;
+    height: 30vh;
     display: grid;
     align-items: center;
+}
+
+.panel:after {
+    content: '';
+    position: absolute;
+    width: 100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: all .8s;
+    -webkit-transition: all .8s;
+}
+
+.panel h3 {
+    opacity: 0;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.panel:hover::after {
+    opacity: 1;
+}
+
+.panel:hover h3{
+    opacity: 1;
+    color: #fffaf0;
+    z-index: 2;
+}
+
+#malebog {
+    background-image: url("../assets/stak_malebog1200.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#troika {
+    background-image: url("../assets/troikafilm_screenshot-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+#montana {
+    background-image: url("../assets/montanaband_screenshot-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.project-wrapper {
+    padding-top: 8em;
+    place-self: center;
+    max-width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+
+.project-cover-image {
+    max-width: 30vw;
+    justify-self: center;
+}
+
+.project-text {
+    max-width: 40vw;
+    justify-self: center;
+}
+
+.project-buttons {
+    display: grid;
+    grid-column-start: 3;
+    background-color: none;
+    border: none;
+    text-decoration: none;
+}
+
+.project-buttons :nth-child(n) {
+    padding: .5em 1.5em;
 }
