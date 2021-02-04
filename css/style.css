@@ -9,6 +9,7 @@ html {
 }
 
 body {
+    color: #2c2524;
     background-color: #fffaf0;
     font-family: 'Coda', cursive;
     height: 100%;
@@ -29,6 +30,10 @@ body {
 .navbar ul {
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.fullwidth {
     flex: 1 0 100%;
     justify-content: center;
 }
@@ -165,6 +170,10 @@ footer {
     color: #fffaf0;
     padding: 2em 1em;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 /* Media queries */
@@ -181,6 +190,13 @@ footer {
 @media (min-width: 600px){
     .navbar {
         justify-content: space-between;
+    }
+
+    .fullwidth {
         flex: 0 1 auto;
+    }
+
+    .navbar ul li {
+        flex: 0 0 auto;
     }
 }
