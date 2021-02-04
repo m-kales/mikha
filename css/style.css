@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #fffaf0;
     font-family: 'Coda', cursive;
@@ -12,22 +16,30 @@ body {
 }
 
 .navbar {
-    padding-top: 2em;
     display: flex;
-    align-items: flex-end;
-    align-content: space-between;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 2em;
 }
-
 .navbar h2 {
     font-size: 1em;
+    place-content: ;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .navbar li {
     font-size: 1em;
     list-style: none;
-    display: inline;
-    margin-left: 4em;
+    margin-right: 20px;
+}
+
+.navbar li :last-child {
+    margin-right: 0px;
 }
 
 a {
@@ -35,40 +47,43 @@ a {
     color: #2c2524;
 }
 
+header {
+    display: grid;
+    justify-items: center;
+}
+
 .hero-container {
-    width: 100vw;
     display: grid;
     padding-top: 8em;
+    grid-template-columns: 1fr;
+    place-items: center;
 }
 
 .center-box {
-    place-self: center;
     width: 40vw;
-    height: 50vh;
-}
-
-
-main {
-    display: grid;
+    height: 100%;
+    padding: 4em 1em;
 }
 
 .project-thumbs {
     background-color: #fffaf0;
-    width: 60vw;
-    justify-self: center;
-    align-items: center;
     display: grid;
     gap: 2em;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-rows: 220px;
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 2em;
 }
 
 .panel {
     position: relative;
     border: #2c2524 solid .2em;
     text-align: center;
-    height: 30vh;
     display: grid;
     align-items: center;
+    height: 220px;
 }
 
 .panel:after {
@@ -138,8 +153,6 @@ main {
 }
 
 .project-buttons {
-    display: grid;
-    grid-column-start: 3;
     background-color: none;
     border: none;
     text-decoration: none;
@@ -147,4 +160,18 @@ main {
 
 .project-buttons :nth-child(n) {
     padding: .5em 1.5em;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 678px) {
+    .project-thumbs {
+        max-width: 90vw;
+    }
+}
+
+@media (min-width: 600px){
+    .navbar {
+        justify-content: space-between;
+    }
 }
