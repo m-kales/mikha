@@ -149,7 +149,7 @@ main {
     place-self: center;
     max-width: 80vw;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(1fr 1fr 2fr);
     gap: 2em;
 }
 
@@ -164,13 +164,15 @@ main {
 }
 
 .project-buttons {
-    background-color: none;
     border: none;
     text-decoration: none;
+    justify-self: center;
 }
 
 .project-buttons :nth-child(n) {
     padding: .5em 1.5em;
+    background-color: #2c2524;
+    color: #fffaf0;
 }
 
 footer {
