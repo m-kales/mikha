@@ -24,12 +24,13 @@ body {
 }
 .navbar h2 {
     font-size: 1em;
-    place-content: ;
 }
 
 .navbar ul {
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    flex: 1 0 100%;
+    justify-content: center;
 }
 
 .navbar li {
@@ -180,5 +181,6 @@ footer {
 @media (min-width: 600px){
     .navbar {
         justify-content: space-between;
+        flex: 0 1 auto;
     }
 }
