@@ -82,24 +82,17 @@ main {
     flex: 1 0 auto;
 }
 
-
-.panel:hover h3{
-    opacity: 1;
-    color: #fffaf0;
-    z-index: 2;
-}
-
 .project-cards {
     padding: 2em 0;
     width: 80vw;
     place-self: center;
+    justify-content: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
     gap: 2em;
 }
 
 .card {
-    position: relative;
     background-color: #fffaf0;
     border: #2c2524 solid .2em;
     display: grid;
@@ -116,37 +109,11 @@ main {
     padding: 2em 3em;
 }
 
+.card-text {
+    margin-bottom: 1em;
+}
+
 a.card-link {
-    padding: .5em 1.5em;
-    background-color: #2c2524;
-    color: #fffaf0;
-}
-
-.project-wrapper {
-    place-self: center;
-    min-height: 100vh;
-    padding-top: 4em;
-    max-width: 80vw;
-    display: grid;
-    grid-template-columns: 30vw 1fr;
-    gap: 2em;
-}
-
-.project-cover-image {
-    max-width: 30vw;
-}
-
-.project-text {
-    max-width: 40vw;
-}
-
-.project-buttons {
-    border: none;
-    text-decoration: none;
-    justify-self: center;
-}
-
-.project-buttons :nth-child(1) {
     padding: .5em 1.5em;
     background-color: #2c2524;
     color: #fffaf0;
