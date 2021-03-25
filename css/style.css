@@ -130,6 +130,11 @@ a.disabled {
     width: 100%;
     height: 15em;
     object-fit: cover;
+    object-position: top;
+}
+
+.img-center {
+    object-position: center;
 }
 
 .card-body {
