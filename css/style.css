@@ -123,6 +123,7 @@ a.disabled {
     background-color: #fffaf0;
     border: #2c2524 solid .2em;
     display: grid;
+    align-content: flex-start;
 }
 
 .card-img {
@@ -152,6 +153,15 @@ a.card-link {
     text-decoration: none;
 }
 
+ul.social {
+    align-self: stretch;
+    justify-self: end;
+}
+
+ul.social.flex-li {
+    padding-bottom: 0;
+}
+
 section.content-3, section.content-2 {
     display: grid;
     align-items: center;
@@ -173,7 +183,7 @@ section.content-3, section.content-2 {
     padding-right: 1em;
     display: inline-block;
     width: 90px;
-    text-align: right;
+    text-align: left;
 }
 
 .contact input, .contact textarea {
