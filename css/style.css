@@ -147,7 +147,6 @@ h1, h2, h3 {
     height: 15em;
     object-fit: cover;
     object-position: top;
-    border-bottom: #2c252422 .2em solid;
 }
 
 .img-center {
