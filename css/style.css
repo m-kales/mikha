@@ -291,7 +291,10 @@ footer > p {
 
     .navbar {
         text-align: right;
-        display: grid;
+    }
+
+    .navbar-ul {
+        flex-direction: column;
     }
 
     section.content-3 {
