@@ -44,13 +44,14 @@ body {
 
 .footer {
     grid-area: ft;
+    margin-top: 3rem;
 }
 
 #wrapper {
     padding-left: 2rem;
     padding-right: 2rem;
     display: grid;
-    gap: 3rem;
+    gap: 4rem;
     grid-template-areas: 
     "nv"
     "hd"
