@@ -94,11 +94,11 @@ h6 {
 	margin-bottom: 0.2em;
 }
 
-ul {
+ul.container__articles {
 	padding: 0;
 }
 
-li {
+li.article {
 	list-style: none;
 	margin-bottom: 1em;
 }
