@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap');
 
 /*
   1. Use a more-intuitive box-sizing model.
@@ -28,8 +28,9 @@ body {
 */
 body {
 	line-height: 1.5;
+	font-size: 16px;
 	-webkit-font-smoothing: antialiased;
-	font-family: "Fira Code", monospace;
+	font-family: 'Fira Code', monospace;
 }
 /*
   6. Improve media defaults
