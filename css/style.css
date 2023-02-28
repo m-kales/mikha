@@ -90,6 +90,25 @@ h6 {
 	margin-block: 1em;
 }
 
+.section > h2 {
+	margin-bottom: 0.2em;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+	margin-bottom: 1em;
+}
+
+.subtitle__duration {
+	color: #7e7e7e;
+	display: block;
+	margin-bottom: 0.4em;
+}
+
 @media (max-width: 768px) {
 	.page-wrapper__inner-container {
 		padding: 1em;
