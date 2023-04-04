@@ -1,2 +1,2 @@
 # mikha
- my portfolio site
+ My CV site
